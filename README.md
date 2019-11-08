@@ -24,7 +24,7 @@ The system ingests events from various sources (hence similarly to the event pro
 
 The events are classified and treated by collection of diverse workflows of different kind. They are quite diverse indeed, and what unities them is they are executable in some universal way (which means that they are appropriately annotated, e.g. as an OpenAPI service, or as CWL description), and reproducible (i.e. they produce the same result for the same input, and hence can be cached). This allows to assign then unique identities, keep track of them in the rdf store (in Jena), keep track of meaningful provenance, etc.
 
-Most of the transient analysis workflows live as OpenAPI services, which makes them responsive and distributed (kept near the data).
+Most of the transient analysis workflows live as [OpenAPI](https://github.com/OAI/OpenAPI-Specification) services, which makes them responsive and distributed (kept near the data).
 
 The online data analysis (see [frontend](https://www.astro.unige.ch/cdci/astrooda_)) is also treated as one of such workflows. Internally, it fetches workflows from github.
 
@@ -33,7 +33,7 @@ What is primarily seen by the users is the "dashboard"  which presents various s
 
 The heterogeneous design is intentional, and natural for the multi-messenger domain, with multiple parties with different practices are interfacing. So a lot of the time we try on building adopters to the interfaces instead of forcing the same interface.
 
-We focus on developing the scientific workflows in universal reproducible way, and develop interfaces to various external providers (e.g. we consume some services from ESAC).
+We focus on developing the scientific workflows in universal reproducible way, and develop interfaces to various external providers (e.g. we consume some services from [ESAC](https://www.esa.int/About_Us/ESAC)).
 This also allows to substitute different designs of the infrastructure without changing the scientific data analysis workflows, only recombining them differently: for faster realtime processing, with different scientific contexts, etc.
 
-The products of this system also end up in the same channels I described above: GCN notices, circulars, zenodo.
+The products of this system also end up in the same channels described above: GCN notices, circulars, zenodo.
